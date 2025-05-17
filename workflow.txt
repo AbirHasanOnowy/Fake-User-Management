@@ -1,0 +1,8 @@
+1. created a next project from terminal
+2. js,no src,tw-css,no turbo,app route 
+3. created app->util->db.js->users array, removed unnecessary parts
+4. installed material tailwind css
+5. created app->api->users->route.js
+6. created app->api->users->[id]->route.js
+7. app->api->users->route.js import users data and export as json for get method
+8. 
