@@ -6,8 +6,21 @@ import fs from "fs";
 export async function GET(_, res) {
   const { id } = await res.params;
   const user = users.find((user) => user.id === Number(id));
+  if (!user) {
+    return NextResponse.json(
+      { result: "User not found" },
+      {
+        status: 404,
+        ok: false,
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }
+    );
+  }
   return NextResponse.json(user, {
     status: 200,
+    ok: true,
     headers: {
       "Content-Type": "application/json",
     },
@@ -81,6 +94,7 @@ export async function DELETE(_, res) {
       { result: "User not found" },
       {
         status: 404,
+        ok: false,
         headers: {
           "Content-Type": "application/json",
         },
@@ -102,9 +116,7 @@ export async function DELETE(_, res) {
     { result: "User deleted successfully" },
     {
       status: 200,
-      headers: {
-        "Content-Type": "application/json",
-      },
+      ok: true,
     }
   );
 }

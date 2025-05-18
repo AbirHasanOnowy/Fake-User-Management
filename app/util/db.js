@@ -56,16 +56,9 @@ export const users = [
     "password": "1234nr"
   },
   {
-    "id": 10,
-    "name": "Tony Stark",
-    "age": 22,
-    "email": "tony@gmail.com",
-    "password": "1234ts"
-  },
-  {
     "id": 12,
     "name": "Abir Hasan",
-    "age": 24,
+    "age": "25",
     "email": "abir@gmail.com",
     "password": "1234ah"
   },
@@ -82,5 +75,26 @@ export const users = [
     "age": 32,
     "email": "sakib@gmail.com",
     "password": "1234sh"
+  },
+  {
+    "id": 15,
+    "name": "Nadim Hossain",
+    "age": "26",
+    "email": "nadim@gmail.com",
+    "password": "1234nh"
+  },
+  {
+    "id": 16,
+    "name": "Toufiq Ahmed",
+    "age": "28",
+    "email": "toufiq@gmail.com",
+    "password": "1234ta"
+  },
+  {
+    "id": 17,
+    "name": "Tony Stark",
+    "age": "36",
+    "email": "tony@gmail.com",
+    "password": "1234ts"
   }
 ]
